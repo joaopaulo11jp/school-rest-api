@@ -1,6 +1,10 @@
 package io.github.joaopaulo11jp.school.resources.teachers;
 
+import java.util.Collections;
+import java.util.List;
+
 import javax.ws.rs.Consumes;
+import javax.ws.rs.GET;
 import javax.ws.rs.PATCH;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
@@ -13,10 +17,18 @@ import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 
 import io.github.joaopaulo11jp.school.resources.teachers.handlers.CreateTeacherHandler;
+import io.github.joaopaulo11jp.school.resources.teachers.handlers.ListTeachersHandler;
 import io.github.joaopaulo11jp.school.resources.teachers.handlers.UpdateTeacherHandler;
 
 @Path("/teachers")
 public class TeachersResource {
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@APIResponse(responseCode = "200", description = "Teache's list fetched")
+	public List<ListTeachersHandler.DTO> list() {
+		return Collections.emptyList();
+	}
 	
 	@POST
 	@Consumes(MediaType.APPLICATION_JSON)
