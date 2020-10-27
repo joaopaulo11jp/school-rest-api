@@ -1,20 +1,10 @@
 package io.github.joaopaulo11jp.school.resources.teachers.handlers;
 
-import java.time.LocalDate;
-
-import javax.enterprise.context.ApplicationScoped;
-
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
-@ApplicationScoped
-public class UpdateTeacherHandler {
+public interface UpdateTeacherHandler {
 	
-	public void handle(DTO dto) {
-		//TODO Implement it!
-		//transform
-		//validate
-		//persist
-	}
+	public void handle(DTO dto);
 	
 	@Schema(name = "Teacher Update", description = "Teacher's data to update")
 	public static class DTO {

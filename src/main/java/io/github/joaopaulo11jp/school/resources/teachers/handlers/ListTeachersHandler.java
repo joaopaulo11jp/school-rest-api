@@ -1,13 +1,18 @@
 package io.github.joaopaulo11jp.school.resources.teachers.handlers;
 
+import java.util.List;
+
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
-public interface CreateTeacherHandler {
+public interface ListTeachersHandler {
 	
-	public void handle(DTO dto);
+	public List<DTO> handle();
 	
-	@Schema(name = "New Teacher", description = "New teacher registration's data")
+	@Schema(name = "Teachers data", description = "Teacher's data to update")
 	public static class DTO {
+		
+		@Schema(description = "teacher's id", required = true)
+		private String id;
 		
 		@Schema(description = "teacher's name", required = true, example="John Sparrow")
 		private String name;
@@ -15,7 +20,7 @@ public interface CreateTeacherHandler {
 		@Schema(description = "teacher's birth date in dd/MM/yyyy", required = true, example="31/01/1995")
 		private String birthDate;
 		
-		@Schema(description = "teacher's national id", required = true, example="11122233344")
+		@Schema(description = "masked teacher's national id", required = true, example="111xxxxxx44")
 		private String nationalId;
 		
 		@Schema(description = "teacher's phone number", example = "83996159668")
@@ -64,7 +69,7 @@ public interface CreateTeacherHandler {
 
 		public void setEmail(String email) {
 			this.email = email;
-		}
+		}	
 	}
 	
 }
