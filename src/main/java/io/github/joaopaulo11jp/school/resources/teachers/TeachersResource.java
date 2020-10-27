@@ -18,6 +18,7 @@ import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
 
 import io.github.joaopaulo11jp.school.resources.teachers.handlers.CreateTeacherHandler;
 import io.github.joaopaulo11jp.school.resources.teachers.handlers.ListTeachersHandler;
+import io.github.joaopaulo11jp.school.resources.teachers.handlers.RetrieveTeacherHandler;
 import io.github.joaopaulo11jp.school.resources.teachers.handlers.UpdateTeacherHandler;
 
 @Path("/teachers")
@@ -25,9 +26,16 @@ public class TeachersResource {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	@APIResponse(responseCode = "200", description = "Teache's list fetched")
+	@APIResponse(responseCode = "200", description = "Teacher's list fetched")
 	public List<ListTeachersHandler.DTO> list() {
 		return Collections.emptyList();
+	}
+	
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@APIResponse(responseCode = "200", description = "Teacher's data")
+	public RetrieveTeacherHandler.DTO retrieve() {
+		return new RetrieveTeacherHandler.DTO();
 	}
 	
 	@POST
