@@ -32,6 +32,7 @@ public class TeachersResource {
 	}
 	
 	@GET
+	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
 	@APIResponse(responseCode = "200", description = "Teacher's data")
 	public RetrieveTeacherHandler.DTO retrieve() {
