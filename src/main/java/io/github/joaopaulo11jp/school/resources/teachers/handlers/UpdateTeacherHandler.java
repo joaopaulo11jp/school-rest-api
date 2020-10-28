@@ -1,10 +1,12 @@
 package io.github.joaopaulo11jp.school.resources.teachers.handlers;
 
+import java.util.UUID;
+
 import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 public interface UpdateTeacherHandler {
 	
-	public void handle(DTO dto);
+	void handle(UUID id, DTO dto);
 	
 	@Schema(name = "Teacher Update", description = "Teacher's data to update")
 	public static class DTO {

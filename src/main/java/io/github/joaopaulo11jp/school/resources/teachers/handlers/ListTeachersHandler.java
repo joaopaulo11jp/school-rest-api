@@ -6,7 +6,7 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 public interface ListTeachersHandler {
 	
-	public List<DTO> handle();
+	List<DTO> handle();
 	
 	@Schema(name = "Teachers data", description = "Teacher's data to update")
 	public static class DTO {

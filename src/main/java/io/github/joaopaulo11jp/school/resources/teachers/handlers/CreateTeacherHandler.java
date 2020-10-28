@@ -4,7 +4,7 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 public interface CreateTeacherHandler {
 	
-	public void handle(DTO dto);
+	void handle(DTO dto);
 	
 	@Schema(name = "New Teacher", description = "New teacher registration's data")
 	public static class DTO {

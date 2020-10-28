@@ -4,7 +4,7 @@ import org.eclipse.microprofile.openapi.annotations.media.Schema;
 
 public interface RetrieveTeacherHandler {
 	
-	public DTO handler();
+	DTO handler();
 	
 	@Schema(name = "Teachers data", description = "Teacher's data to update")
 	public static class DTO {

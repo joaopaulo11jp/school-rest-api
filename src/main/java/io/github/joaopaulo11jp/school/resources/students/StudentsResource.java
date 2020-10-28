@@ -17,7 +17,6 @@ import io.github.joaopaulo11jp.school.resources.students.handlers.CreateStudentH
 import io.github.joaopaulo11jp.school.resources.students.handlers.ListStudentsHandler;
 import io.github.joaopaulo11jp.school.resources.students.handlers.RetrieveStudentHandler;
 import io.github.joaopaulo11jp.school.resources.students.handlers.UpdateStudentHandler;
-import io.github.joaopaulo11jp.school.resources.teachers.handlers.RetrieveTeacherHandler;
 
 @Path("/students")
 public class StudentsResource {
