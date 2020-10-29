@@ -23,7 +23,7 @@ public class StudentsResource {
 	
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	@APIResponse(responseCode = "200", description = "Teacher's list fetched")
+	@APIResponse(responseCode = "200", description = "Students' list fetched")
 	public List<ListStudentsHandler.DTO> list() {
 		return Collections.emptyList();
 	}
@@ -31,7 +31,7 @@ public class StudentsResource {
 	@GET
 	@Path("/{id}")
 	@Produces(MediaType.APPLICATION_JSON)
-	@APIResponse(responseCode = "200", description = "Teacher's data")
+	@APIResponse(responseCode = "200", description = "Student's data")
 	public RetrieveStudentHandler.DTO retrieve() {
 		return new RetrieveStudentHandler.DTO();
 	}
