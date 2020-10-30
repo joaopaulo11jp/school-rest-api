@@ -11,7 +11,7 @@ public interface RetrieveStudentHandler {
 	@Schema(name = "Student's data", description = "student's data")
 	static class DTO {
 		
-		@Schema(required = true, example="Daniel Combs")
+		@Schema(required = true, example="123e4567-e89b-12d3-a456-426614174000")
 		private String id;		
 		
 		@Schema(description = "student's name", required = true, example="Daniel Combs")

@@ -1,6 +1,7 @@
 package io.github.joaopaulo11jp.school.resources.teachers;
 
 import java.util.Collections;
+
 import java.util.List;
 
 import javax.ws.rs.Consumes;

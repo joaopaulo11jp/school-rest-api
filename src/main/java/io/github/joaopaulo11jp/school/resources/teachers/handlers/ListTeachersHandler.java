@@ -11,7 +11,7 @@ public interface ListTeachersHandler {
 	@Schema(name = "Teachers data", description = "Teacher's data to update")
 	public static class DTO {
 		
-		@Schema(description = "teacher's id", required = true)
+		@Schema(description = "teacher's id", required = true, example = "123e4567-e89b-12d3-a456-426614174000")
 		private String id;
 		
 		@Schema(description = "teacher's name", required = true, example="John Sparrow")
