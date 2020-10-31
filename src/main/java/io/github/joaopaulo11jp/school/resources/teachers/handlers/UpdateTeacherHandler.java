@@ -8,7 +8,7 @@ public interface UpdateTeacherHandler {
 	
 	void handle(UUID id, DTO dto);
 	
-	@Schema(name = "Teacher Update", description = "Teacher's data to update")
+	@Schema(name = "Teacher's update data", description = "Teacher's data to update")
 	public static class DTO {
 		
 		@Schema(description = "teacher's name", required = true, example="John Sparrow")

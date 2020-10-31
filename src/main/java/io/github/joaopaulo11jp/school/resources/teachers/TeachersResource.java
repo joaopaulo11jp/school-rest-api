@@ -16,6 +16,7 @@ import javax.ws.rs.core.Response;
 
 import org.eclipse.microprofile.openapi.annotations.parameters.RequestBody;
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
+import org.eclipse.microprofile.openapi.annotations.tags.Tags;
 
 import io.github.joaopaulo11jp.school.resources.teachers.handlers.CreateTeacherHandler;
 import io.github.joaopaulo11jp.school.resources.teachers.handlers.ListTeachersHandler;
@@ -23,6 +24,7 @@ import io.github.joaopaulo11jp.school.resources.teachers.handlers.RetrieveTeache
 import io.github.joaopaulo11jp.school.resources.teachers.handlers.UpdateTeacherHandler;
 
 @Path("/teachers")
+@Tags(refs = "Teachers")
 public class TeachersResource {
 	
 	@GET

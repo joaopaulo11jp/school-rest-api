@@ -13,6 +13,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 import org.eclipse.microprofile.openapi.annotations.responses.APIResponse;
+import org.eclipse.microprofile.openapi.annotations.tags.Tags;
 
 import io.github.joaopaulo11jp.school.resources.students.handlers.CreateStudentHandler;
 import io.github.joaopaulo11jp.school.resources.students.handlers.ListStudentsHandler;
@@ -20,6 +21,7 @@ import io.github.joaopaulo11jp.school.resources.students.handlers.RetrieveStuden
 import io.github.joaopaulo11jp.school.resources.students.handlers.UpdateStudentHandler;
 
 @Path("/students")
+@Tags(refs = "Students")
 public class StudentsResource {
 	
 	@GET
