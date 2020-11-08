@@ -49,6 +49,7 @@ public class StudentsResource {
 	}
 	
 	@PATCH
+	@Path("/{id}")
 	@Consumes(MediaType.APPLICATION_JSON)
 	@Produces(MediaType.APPLICATION_JSON)
 	@APIResponse(responseCode = "200", description = "Student updated successfully.")

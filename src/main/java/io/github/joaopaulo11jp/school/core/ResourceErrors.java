@@ -12,11 +12,11 @@ public class ResourceErrors {
 		return errors;
 	}
 	
-	private ResourceErrors(@NotNull Set<String> errors) {
+	private ResourceErrors(Set<String> errors) {
 		this.errors = errors;
 	}
 	
-	public static ResourceErrors from(Set<String> errors) {
+	public static ResourceErrors from(@NotNull Set<String> errors) {
 		return new ResourceErrors(errors);
 	}
 }

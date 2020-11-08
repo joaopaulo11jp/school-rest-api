@@ -6,7 +6,7 @@ public interface RetrieveTeacherHandler {
 	
 	DTO handler();
 	
-	@Schema(name = "Teachers data", description = "Teacher's data to update")
+	@Schema(name = "Teacher's data", description = "Teacher's data to update")
 	public static class DTO {
 		
 		@Schema(description = "teacher's id", required = true, example = "123e4567-e89b-12d3-a456-426614174000")

@@ -11,7 +11,8 @@ import org.eclipse.microprofile.openapi.annotations.tags.Tag;
 @OpenAPIDefinition(
 	    tags = {
 	            @Tag(name="Teachers"),
-	            @Tag(name="Students")
+	            @Tag(name="Students"),
+	            @Tag(name="Classes")
 	    },
 	    info = @Info(
 	        title="School API",
